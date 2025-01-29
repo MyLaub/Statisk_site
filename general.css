@@ -1,0 +1,213 @@
+/* General CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f7f5;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "futura", "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: "futura", "Times New Roman", Times, serif;
+  font-weight: 200;
+  color: #6e7876;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* General CSS */
+
+/* Index CSS */
+.category_list_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category_list_container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category_list_container li {
+  margin: 0.5rem;
+}
+
+.category_list_container a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #692b14;
+  background-color: #f9f7f5;
+  border: 1px solid #692b14;
+  border-radius: 0px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.category_list_container a:hover {
+  background-color: #f9f7f5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Index CSS */
+
+/* Produktliste CSS */
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+article {
+  background-color: white;
+  /* border-radius: 5px; */
+  /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); */
+  text-align: center;
+}
+
+article > h3 {
+  font-family: "futura";
+  font-size: 1.5em;
+  font-weight: 200;
+  padding: 0.5em;
+  background-color: white;
+  color: #6e7876;
+  margin: 0;
+  /* border-radius: 5px 5px 0 0; */
+  text-align: center;
+}
+
+article > img {
+  width: 100%;
+  margin: 0;
+}
+
+article > p {
+  font-family: "Playfair Display";
+  text-align: center;
+  padding-top: 0.8rem;
+}
+
+article > a {
+  font-family: "futura";
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #692b14;
+  background-color: white;
+  border: 1px solid #692b14;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Produktliste CSS */
+
+/* Produktside */
+
+.product_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product_image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.product_info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product_info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product_info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.sidebar p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.sidebar select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sidebar button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #444;
+}
+
+/* Produktside */
