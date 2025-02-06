@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* @font-face {
+  font-family: "Baskerville Display BT";
+  src: url("../botaky_medium-webfont.woff2") format("woff2"), url("../botaky_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+body {
+  background-color: #f9f7f5;
+  margin: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+  --lyserød: #ecc0d4;
+  --kaki: #8d7542;
+  --rød: #dc3f26;
+  --grøn: #59904f;
+  --lime: #b2be32;
+  --orange: #f17b27;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "avenir";
+  font-style: normal;
+  color: black;
+  text-align: center;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: "avenir";
+  font-style: oblique;
+  font-weight: 200;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* General CSS */
+
+/* Index CSS */
+/* Header css */
+
+header {
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-bottom: 4px solid black;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  margin: 0;
+  text-align: left;
+}
+
+header .fashionrus {
+  font-family: "Avenir", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+}
+
+header .categories {
+  font-family: "Baskerville Display BT", serif;
+  font-size: 4rem;
+  font-style: italic;
+  color: black;
+  margin-left: 0px; /* Lidt luft mellem teksten */
+}
+
+/* Header css */
+
+/* Grid index css */
+.category_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.category_list_container li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "avenir";
+  font-style: oblique;
+  font-weight: 200;
+  aspect-ratio: 1 / 1;
+}
+
+.category_list_container ul {
+  display: contents;
+  padding: 0;
+  margin: 0;
+}
+
+.category_list_container li:hover {
+  transform: translateY(-5px);
+  background-color: #ddd;
+}
+
+.category_list_container li a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Grid index css */
+
+/* Index CSS */
+
+/* Produktliste CSS */
+
+#categoryFilter {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+article {
+  background-color: white;
+  text-align: center;
+}
+
+.smallProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  min-height: 500px; /* Ens minimumhøjde for alle cards */
+}
+
+article > h3 {
+  font-family: "avenir", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5em;
+  background-color: white;
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+
+article > img {
+  width: 100%;
+  margin: 0;
+}
+
+article > p {
+  font-family: "Baskerville Display BT", serif;
+  font-style: italic;
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.price {
+  font-family: "Avenir", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.product-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Produktliste CSS */
+
+/* Produktside */
+
+.productdisplayname {
+  font-family: "Baskerville Display BT", serif;
+  font-size: 4rem;
+  font-style: italic;
+  color: black;
+  margin-left: 0px;
+}
+
+.product_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.product_image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.product_info {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* .product_info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+} */
+
+.product_info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.productdisplayname2 {
+  font-family: "Avenir", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.sidebar p {
+  font-family: "Baskerville Display BT", serif;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.sidebar select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.sidebar button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--kaki);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #444;
+}
+
+/* Produktside */
+
+/* Markering for udsalg */
+
+.onSale {
+  position: relative;
+}
+
+.onSale p.price {
+  font-family: "Avenir", sans-serif;
+  font-style: normal;
+  color: black;
+  font-weight: 500;
+}
+
+/* Rediger rabat-badge til at vise procent */
+.onSale .discount {
+  font-family: "Baskerville Display BT", serif;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Markering for udsolgte produkter */
+
+.soldOut {
+  position: relative;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.soldOut::after {
+  content: "Udsolgt";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.saleLabel {
+  /* position: absolute; */
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #8d7542;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.isOnSale {
+  visibility: visible;
+}
+
+.product_container {
+  position: relative;
+}
