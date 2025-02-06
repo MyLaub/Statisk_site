@@ -88,7 +88,13 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${myVar}`)
         </div>
 
         <div class="sidebar">
-          <h2 class="price">DKK ${data.price},-</h2>
+          <h2 class="price">
+            ${
+              data.discount
+                ? `<s>${data.price},-</s> ${(data.price - (data.discount * data.price) / 100).toFixed(2)},-`
+                : `${data.price},-`
+            }
+          </h2>
           <label for="size">Choose a size</label>
           <select id="size">
             <option value="S">S</option>
